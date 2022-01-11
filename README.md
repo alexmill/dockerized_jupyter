@@ -23,3 +23,6 @@ docker run \
   --env JUPYTER_ENABLE_LAB="yes" \
   $IMAGE_ID
 ```
+
+## More info
+Python dependencies can be updated in the `requirements.txt` file locally. After making any changes to `requirements.txt` (or `Dockerfile`), re-build the image: `docker build -t jupyter_lab_docker .`.
